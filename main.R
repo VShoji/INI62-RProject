@@ -10,6 +10,7 @@ cepagri$horario <- as.POSIXct(cepagri$horario,format="%d/%m/%Y-%H:%M",tz=Sys.tim
 
 cepagri <- subset(cepagri, sensa <= 60)
 
-#cepagri = subset(cepagri, umid >= 10)
+cepagri = subset(cepagri, umid >= 10)
+#https://portal.campinas.sp.gov.br/noticia/41646
 
 summary(cepagri)
